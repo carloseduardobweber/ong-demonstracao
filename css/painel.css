@@ -1,0 +1,8 @@
+/* Painel: a letra é a Quicksand (vem do Google pelo Filament) e o algarismo é a IBM Plex Sans Condensed, só para 0-9,
+   como nas páginas públicas e na Zelo. A Quicksand não tem algarismo de largura fixa: sem isto, valor em coluna fica
+   desalinhado. Entra depois do :root do Filament (gancho STYLES_AFTER) e só troca a família. */
+@font-face { font-family: 'Plex Num'; font-style: normal; font-weight: 400; font-display: swap; src: url('../fonts/plex-condensed-400-latin.woff2') format('woff2'); unicode-range: U+0030-0039; }
+@font-face { font-family: 'Plex Num'; font-style: normal; font-weight: 500 600; font-display: swap; src: url('../fonts/plex-condensed-600-latin.woff2') format('woff2'); unicode-range: U+0030-0039; }
+@font-face { font-family: 'Plex Num'; font-style: normal; font-weight: 700 900; font-display: swap; src: url('../fonts/plex-condensed-700-latin.woff2') format('woff2'); unicode-range: U+0030-0039; }
+
+:root { --font-family: 'Plex Num', 'Quicksand'; }
