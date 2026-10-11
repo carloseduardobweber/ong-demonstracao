@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="pt-BR" data-demonstracao>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Janta Solidária do bairro X</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Manrope:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://carloseduardobweber.github.io/ong-demonstracao/css/ong.css?v=1791747557">
+<script src="https://carloseduardobweber.github.io/ong-demonstracao/js/lista.js?v=1791731645" defer></script>
+<script src="https://carloseduardobweber.github.io/ong-demonstracao/js/datapop.js?v=1791731772" defer></script>
+<script src="https://carloseduardobweber.github.io/ong-demonstracao/js/publico.js?v=1791748295" defer></script>
+</head>
+<body>
+<main class="mx-auto grid max-w-3xl gap-6 px-4 pt-5 pb-16">
+  <nav class="flex flex-wrap items-center gap-x-4 gap-y-2 text-sm"><a class="font-medium text-primary" href="https://carloseduardobweber.github.io/ong-demonstracao">Início</a><a class="font-medium text-primary" href="https://carloseduardobweber.github.io/ong-demonstracao/proposito">Propósito</a><a class="font-medium text-primary" href="https://carloseduardobweber.github.io/ong-demonstracao/confira">Confira</a><a class="font-medium text-primary" href="https://carloseduardobweber.github.io/ong-demonstracao/denuncia">Denúncia</a><a class="btn btn-sm ml-auto no-underline" href="https://carloseduardobweber.github.io/ong-demonstracao/ajudar">Quero ajudar</a></nav>
+  <div class="alert alert-info" role="note"><p class="alert-title">Demonstração</p><p class="alert-description">Os dados são inventados e nada do que você preencher aqui é enviado.</p></div>        
+<header class="hero">
+    <p class="hero-eyebrow">Campanha · Santa Maria</p>
+  <h1 class="hero-title">Janta Solidária do bairro X</h1>
+  <p class="hero-sub">150 atendidos · moradores do bairro X · salão da associação de moradores</p>
+  </header>
+
+
+<ol class="trilha" aria-label="Etapas da campanha">
+          <li class="trilha-passo is-feito" >
+      <div class="trilha-botao cursor-default"><span class="trilha-marca">1</span><span class="trilha-rotulo">Plano em elaboração</span></div>
+    </li>
+          <li class="trilha-passo is-atual"  aria-current="step" >
+      <div class="trilha-botao cursor-default"><span class="trilha-marca">2</span><span class="trilha-rotulo">Doação</span></div>
+    </li>
+          <li class="trilha-passo " >
+      <div class="trilha-botao cursor-default"><span class="trilha-marca">3</span><span class="trilha-rotulo">Preparação</span></div>
+    </li>
+          <li class="trilha-passo " >
+      <div class="trilha-botao cursor-default"><span class="trilha-marca">4</span><span class="trilha-rotulo">Execução</span></div>
+    </li>
+          <li class="trilha-passo " >
+      <div class="trilha-botao cursor-default"><span class="trilha-marca">5</span><span class="trilha-rotulo">Entregue</span></div>
+    </li>
+  </ol>
+
+
+
+<section class="grid gap-3">
+  <div class="stat-grid lg:grid-cols-3">
+    <div class="stat stat-destaque"><span class="stat-label">Arrecadado</span><span class="stat-value">R$ 441,50</span>
+      <span class="stat-hint">R$ 405,50 em Pix, R$ 36,00 em itens</span></div>
+    <div class="stat"><span class="stat-label">Meta</span><span class="stat-value">R$ 1.237,37</span>
+      <span class="stat-hint">35% atingido</span></div>
+    <div class="stat"><span class="stat-label">Falta</span><span class="stat-value">R$ 795,87</span>
+      <span class="stat-hint">item conta ao chegar no depósito</span></div>
+  </div>
+  <progress class="progress" max="100" value="35">35%</progress>
+</section>
+
+
+<section class="card" id="doar">
+  <div class="card-header"><h2 class="card-title">Doe por Pix</h2>
+    <p class="card-description">Chave aleatória só desta campanha. No app do banco, confira se o nome que aparece é o da ONG.</p></div>
+  <div class="card-content">
+    <div class="input-group h-auto"><span id="chave" class="input-group-code" data-chave>c290a2f5-877a-43e5-aee5-2a843e95b1fe</span>
+      <button type="button" class="btn btn-outline" data-copiar="#chave">Copiar</button></div>
+  </div>
+</section>
+
+<section class="card border-dashed">
+  <div class="card-header"><h2 class="card-title">Simulador do banco</h2>
+    <p class="card-description">Só no ambiente de teste: faz um Pix para a chave acima, como o app do banco de quem doa.</p></div>
+  <form class="card-content form-grid" method="post" action="https://carloseduardobweber.github.io/ong-demonstracao/c/janta-solidaria-bairro-x/simular-pix"><input type="hidden" name="_token" value="rlK42Xrd8oeAEkYkdSlDSnwQ61UqT37kRAHDwYNP" autocomplete="off">    <div class="field"><label class="label" for="sim-valor">Valor</label>
+      <div class="input-group"><span class="input-group-addon">R$</span><input class="input" id="sim-valor" name="valor" type="number" step="0.01" min="1" value="50"></div></div>
+    <div class="field"><label class="label" for="sim-msg">Mensagem</label><input class="input" id="sim-msg" name="mensagem" maxlength="140" placeholder="Força!"></div>
+    <div class="field-wide"><button class="btn">Fazer Pix</button></div>
+  </form>
+</section>
+
+<section class="grid gap-3">
+  <div class="flex flex-wrap items-center gap-2"><h2 class="text-base font-semibold">Doações</h2><span class="badge badge-secondary">5 · R$ 405,50</span></div>
+  <div class="table-wrap"><table class="table table-cards">
+  <thead><tr><th>Quando</th><th>Quem</th><th>Final do ID</th><th class="text-right">Valor</th></tr></thead>
+  <tbody>
+      <tr>
+      <td class="tabular-nums">11/10 16:45</td>
+      <td data-rotulo="Quem"><div class="text-left">
+        <span class="badge badge-warning">Devolvido</span>
+                <span class="block text-xs font-normal text-muted-foreground">Pix feito por engano</span></div></td>
+      <td class="font-mono" data-rotulo="Final do ID">t4oewg</td>
+      <td class="text-right tabular-nums text-destructive" data-rotulo="Valor">R$ -80,00</td>
+    </tr>
+      <tr>
+      <td class="tabular-nums">11/10 16:45</td>
+      <td data-rotulo="Quem"><div class="text-left">
+        <span class="font-medium">Doador</span>        </div></td>
+      <td class="font-mono" data-rotulo="Final do ID">t4oewg</td>
+      <td class="text-right tabular-nums " data-rotulo="Valor">R$ 80,00</td>
+    </tr>
+      <tr>
+      <td class="tabular-nums">11/10 16:45</td>
+      <td data-rotulo="Quem"><div class="text-left">
+        <span class="font-medium">Doador</span>        </div></td>
+      <td class="font-mono" data-rotulo="Final do ID">xebsnc</td>
+      <td class="text-right tabular-nums " data-rotulo="Valor">R$ 200,00</td>
+    </tr>
+      <tr>
+      <td class="tabular-nums">11/10 16:45</td>
+      <td data-rotulo="Quem"><div class="text-left">
+        <span class="font-medium">Doador</span>        </div></td>
+      <td class="font-mono" data-rotulo="Final do ID">2rlhg2</td>
+      <td class="text-right tabular-nums " data-rotulo="Valor">R$ 35,50</td>
+    </tr>
+      <tr>
+      <td class="tabular-nums">11/10 16:45</td>
+      <td data-rotulo="Quem"><div class="text-left">
+        <span class="font-medium">Doador</span>        </div></td>
+      <td class="font-mono" data-rotulo="Final do ID">5uzkv9</td>
+      <td class="text-right tabular-nums " data-rotulo="Valor">R$ 120,00</td>
+    </tr>
+      <tr>
+      <td class="tabular-nums">11/10 16:45</td>
+      <td data-rotulo="Quem"><div class="text-left">
+        <span class="font-medium">Maria S.</span>        </div></td>
+      <td class="font-mono" data-rotulo="Final do ID">carrcr</td>
+      <td class="text-right tabular-nums " data-rotulo="Valor">R$ 50,00</td>
+    </tr>
+    </tbody>
+</table></div>
+  <div class="flex flex-wrap gap-2">
+        <a class="btn btn-outline btn-sm no-underline" href="https://carloseduardobweber.github.io/ong-demonstracao/confira">Ache a sua doação</a>
+  </div>
+</section>
+
+<section class="grid gap-3">
+  <h2 class="text-base font-semibold">O que a campanha precisa</h2>
+  <div class="table-wrap"><table class="table table-cards">
+    <thead><tr><th>Item</th><th class="text-right">Plano</th><th class="text-right">Chegou</th><th class="text-right">Reservado</th><th class="text-right">Falta doar</th></tr></thead>
+    <tbody>
+              <tr>
+        <td>Arroz </td>
+        <td class="text-right tabular-nums" data-rotulo="Plano">15 kg</td>
+        <td class="text-right tabular-nums" data-rotulo="Chegou">6</td>
+        <td class="text-right tabular-nums" data-rotulo="Reservado">5</td>
+        <td class="text-right tabular-nums " data-rotulo="Falta doar">4</td>
+      </tr>
+          <tr>
+        <td>Feijão </td>
+        <td class="text-right tabular-nums" data-rotulo="Plano">9 kg</td>
+        <td class="text-right tabular-nums" data-rotulo="Chegou">0</td>
+        <td class="text-right tabular-nums" data-rotulo="Reservado">6</td>
+        <td class="text-right tabular-nums " data-rotulo="Falta doar">3</td>
+      </tr>
+          <tr>
+        <td>Óleo, sal e temperos </td>
+        <td class="text-right tabular-nums" data-rotulo="Plano">1 un</td>
+        <td class="text-right tabular-nums" data-rotulo="Chegou">0</td>
+        <td class="text-right tabular-nums" data-rotulo="Reservado">0</td>
+        <td class="text-right tabular-nums " data-rotulo="Falta doar">1</td>
+      </tr>
+          <tr>
+        <td>Frango (sobrecoxa) <span class="badge badge-outline ms-1">compra</span></td>
+        <td class="text-right tabular-nums" data-rotulo="Plano">37,5 kg</td>
+        <td class="text-right tabular-nums" data-rotulo="Chegou">0</td>
+        <td class="text-right tabular-nums" data-rotulo="Reservado">0</td>
+        <td class="text-right tabular-nums  max-sm:hidden " data-rotulo="Falta doar"></td>
+      </tr>
+          <tr>
+        <td>Legumes e salada <span class="badge badge-outline ms-1">compra</span></td>
+        <td class="text-right tabular-nums" data-rotulo="Plano">12 kg</td>
+        <td class="text-right tabular-nums" data-rotulo="Chegou">0</td>
+        <td class="text-right tabular-nums" data-rotulo="Reservado">0</td>
+        <td class="text-right tabular-nums  max-sm:hidden " data-rotulo="Falta doar"></td>
+      </tr>
+          <tr>
+        <td>Suco <span class="badge badge-outline ms-1">compra</span></td>
+        <td class="text-right tabular-nums" data-rotulo="Plano">30 L</td>
+        <td class="text-right tabular-nums" data-rotulo="Chegou">0</td>
+        <td class="text-right tabular-nums" data-rotulo="Reservado">0</td>
+        <td class="text-right tabular-nums  max-sm:hidden " data-rotulo="Falta doar"></td>
+      </tr>
+          <tr>
+        <td>Marmitex e talheres <span class="badge badge-outline ms-1">compra</span></td>
+        <td class="text-right tabular-nums" data-rotulo="Plano">150 un</td>
+        <td class="text-right tabular-nums" data-rotulo="Chegou">0</td>
+        <td class="text-right tabular-nums" data-rotulo="Reservado">0</td>
+        <td class="text-right tabular-nums  max-sm:hidden " data-rotulo="Falta doar"></td>
+      </tr>
+          <tr>
+        <td>Gás <span class="badge badge-outline ms-1">compra</span></td>
+        <td class="text-right tabular-nums" data-rotulo="Plano">1 un</td>
+        <td class="text-right tabular-nums" data-rotulo="Chegou">0</td>
+        <td class="text-right tabular-nums" data-rotulo="Reservado">0</td>
+        <td class="text-right tabular-nums  max-sm:hidden " data-rotulo="Falta doar"></td>
+      </tr>
+        </tbody>
+  </table></div>
+</section>
+
+<section class="card" id="reservar">
+  <div class="card-header"><h2 class="card-title">Reservar doação de item</h2>
+    <p class="card-description">O item conta para a meta quando chega ao depósito.</p></div>
+  <form class="card-content form-grid" method="post" action="https://carloseduardobweber.github.io/ong-demonstracao/c/janta-solidaria-bairro-x/reservar"><input type="hidden" name="_token" value="rlK42Xrd8oeAEkYkdSlDSnwQ61UqT37kRAHDwYNP" autocomplete="off">    <div class="field"><label class="label" for="res-item">Item</label><select class="select" id="res-item" name="plano_item_id">
+              <option value="9" >Arroz (faltam 4 kg)</option>
+              <option value="10" >Feijão (faltam 3 kg)</option>
+              <option value="11" >Óleo, sal e temperos (faltam 1 un)</option>
+          </select></div>
+    <div class="field"><label class="label" for="res-qtd">Quantidade</label><input class="input" id="res-qtd" name="quantidade" type="number" step="0.001" min="0.001" value="" required></div>
+    <div class="field"><label class="label" for="res-ponto">Local de entrega</label><select class="select" id="res-ponto" name="ponto_coleta_id">
+      <option value="1">Depósito da ONG · Rua das Flores, 100</option><option value="2">Supermercado Bom Preço · Av. Central, 500</option>    </select></div>
+    <div class="field"><label class="label" for="res-dataBtn">Data</label><button type="button" class="btn btn-outline w-full justify-start border-input font-normal" id="res-dataBtn" data-datapop="dia" data-alvo="res-data"
+    data-min="2026-10-11"    aria-haspopup="dialog" aria-expanded="false">
+  <svg class="text-muted-foreground" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+  <span data-datapop-rotulo>Escolher a data</span>
+</button>
+<input type="hidden" id="res-data" name="data_prevista" value="">
+</div>
+    <div class="field"><label class="label" for="res-nome">Nome</label><input class="input" id="res-nome" name="nome" value="" required></div>
+    <div class="field"><label class="label" for="res-contato">WhatsApp ou e-mail</label><input class="input" id="res-contato" name="contato" value="" required aria-describedby="res-contato-uso">
+      <span class="text-xs text-muted-foreground" id="res-contato-uso">Só para o lembrete da véspera. Fica guardado cifrado e não aparece na página.</span></div>
+    <div class="field-wide"><button class="btn">Reservar</button></div>
+  </form>
+</section>
+
+<section class="grid gap-3">
+  <div class="flex items-center gap-2"><h2 class="text-base font-semibold">Equipe</h2>
+    </div>
+  <div class="table-wrap"><table class="table table-cards">
+    <thead><tr><th>Função</th><th class="text-right">Vagas</th><th class="text-right">Preenchidas</th><th class="text-right">Suplentes</th></tr></thead>
+    <tbody>
+          <tr><td><div class="text-left"><span class="font-medium">Cozinheiro responsável</span><span class="block text-xs font-normal text-muted-foreground">curso de boas práticas de manipulação</span></div></td>
+        <td class="text-right tabular-nums" data-rotulo="Vagas">1</td>
+        <td class="text-right tabular-nums" data-rotulo="Preenchidas">0</td>
+        <td class="text-right tabular-nums" data-rotulo="Suplentes">0 de 1</td></tr>
+          <tr><td><div class="text-left"><span class="font-medium">Cozinha</span></div></td>
+        <td class="text-right tabular-nums" data-rotulo="Vagas">4</td>
+        <td class="text-right tabular-nums" data-rotulo="Preenchidas">0</td>
+        <td class="text-right tabular-nums" data-rotulo="Suplentes">0 de 1</td></tr>
+          <tr><td><div class="text-left"><span class="font-medium">Mutirão no supermercado</span></div></td>
+        <td class="text-right tabular-nums" data-rotulo="Vagas">6</td>
+        <td class="text-right tabular-nums" data-rotulo="Preenchidas">0</td>
+        <td class="text-right tabular-nums" data-rotulo="Suplentes">0 de 2</td></tr>
+          <tr><td><div class="text-left"><span class="font-medium">Transporte (carro próprio)</span><span class="block text-xs font-normal text-muted-foreground">sem reembolso: o deslocamento é doação</span></div></td>
+        <td class="text-right tabular-nums" data-rotulo="Vagas">2</td>
+        <td class="text-right tabular-nums" data-rotulo="Preenchidas">0</td>
+        <td class="text-right tabular-nums" data-rotulo="Suplentes">0 de 0</td></tr>
+          <tr><td><div class="text-left"><span class="font-medium">Servir e entregar</span><span class="block text-xs font-normal text-muted-foreground">sempre em dupla</span></div></td>
+        <td class="text-right tabular-nums" data-rotulo="Vagas">3</td>
+        <td class="text-right tabular-nums" data-rotulo="Preenchidas">0</td>
+        <td class="text-right tabular-nums" data-rotulo="Suplentes">0 de 1</td></tr>
+        </tbody>
+  </table></div>
+</section>
+
+<section class="card" id="equipe">
+  <div class="card-header"><h2 class="card-title">Quero ser voluntário</h2></div>
+  <form class="card-content form-grid" method="post" action="https://carloseduardobweber.github.io/ong-demonstracao/c/janta-solidaria-bairro-x/inscrever"><input type="hidden" name="_token" value="rlK42Xrd8oeAEkYkdSlDSnwQ61UqT37kRAHDwYNP" autocomplete="off">    <div class="field"><label class="label" for="ins-vaga">Função</label><select class="select" id="ins-vaga" name="vaga_id">
+      <option value="3">Cozinheiro responsável</option><option value="4">Cozinha</option><option value="5">Mutirão no supermercado</option><option value="6">Transporte (carro próprio)</option><option value="7">Servir e entregar</option>    </select></div>
+    <div class="field"><label class="label" for="ins-nome">Nome</label><input class="input" id="ins-nome" name="nome" value="" required></div>
+    <div class="field"><label class="label" for="ins-email">E-mail</label><input class="input" id="ins-email" name="email" type="email" value="" required></div>
+    <div class="field"><label class="label" for="ins-tel">WhatsApp</label><input class="input" id="ins-tel" name="telefone" value="" required></div>
+    <label class="field-horizontal field-wide text-sm"><input class="checkbox" type="checkbox" name="termo" value="1">
+      <span>Li e aceito o <a class="font-medium text-primary no-underline" href="https://carloseduardobweber.github.io/ong-demonstracao/termo-de-voluntariado" target="_blank">termo de adesão ao voluntariado</a></span></label>
+    <div class="field-wide"><button class="btn">Entrar na equipe</button></div>
+  </form>
+</section>
+
+
+<section class="grid gap-3">
+  <div class="flex flex-wrap items-center gap-2"><h2 class="text-base font-semibold">Contas</h2>
+    </div>
+  <div class="stat-grid lg:grid-cols-3">
+    <div class="stat"><span class="stat-label">Entrou</span><span class="stat-value">R$ 405,50</span>
+      <span class="stat-hint">doações em dinheiro</span></div>
+    <div class="stat"><span class="stat-label">Saiu</span><span class="stat-value">R$ 0,00</span>
+      <span class="stat-hint">compras pagas</span></div>
+    <div class="stat max-lg:col-span-2"><span class="stat-label">Saldo</span><span class="stat-value">R$ 405,50</span>
+      <span class="stat-hint">confere com o extrato do banco</span></div>
+  </div>
+      <p class="text-xs text-muted-foreground">Todo pagamento vai direto ao CNPJ do fornecedor, com duas aprovações, e só vira "pago" quando aparece no extrato do banco. Nenhum registro se apaga: correção é registro novo.</p>
+</section>
+
+<section class="grid gap-3">
+  <h2 class="text-base font-semibold">Plano</h2>
+  <div class="table-wrap"><table class="table table-cards">
+    <thead><tr><th>Item</th><th class="text-right">Quantidade</th><th class="text-right">Preço</th><th class="text-right">Custo</th></tr></thead>
+    <tbody>
+                  <tr><td>Arroz</td>
+        <td class="text-right tabular-nums" data-rotulo="Quantidade">15 kg</td>
+        <td class="text-right tabular-nums" data-rotulo="Preço">R$ 6,00</td>
+        <td class="text-right tabular-nums" data-rotulo="Custo">R$ 90,00</td></tr>
+          <tr><td>Feijão</td>
+        <td class="text-right tabular-nums" data-rotulo="Quantidade">9 kg</td>
+        <td class="text-right tabular-nums" data-rotulo="Preço">R$ 8,00</td>
+        <td class="text-right tabular-nums" data-rotulo="Custo">R$ 72,00</td></tr>
+          <tr><td>Óleo, sal e temperos</td>
+        <td class="text-right tabular-nums" data-rotulo="Quantidade">1 un</td>
+        <td class="text-right tabular-nums" data-rotulo="Preço">R$ 85,00</td>
+        <td class="text-right tabular-nums" data-rotulo="Custo">R$ 85,00</td></tr>
+          <tr><td>Frango (sobrecoxa)</td>
+        <td class="text-right tabular-nums" data-rotulo="Quantidade">37,5 kg</td>
+        <td class="text-right tabular-nums" data-rotulo="Preço">R$ 13,01</td>
+        <td class="text-right tabular-nums" data-rotulo="Custo">R$ 487,88</td></tr>
+          <tr><td>Legumes e salada</td>
+        <td class="text-right tabular-nums" data-rotulo="Quantidade">12 kg</td>
+        <td class="text-right tabular-nums" data-rotulo="Preço">R$ 7,50</td>
+        <td class="text-right tabular-nums" data-rotulo="Custo">R$ 90,00</td></tr>
+          <tr><td>Suco</td>
+        <td class="text-right tabular-nums" data-rotulo="Quantidade">30 L</td>
+        <td class="text-right tabular-nums" data-rotulo="Preço">R$ 2,00</td>
+        <td class="text-right tabular-nums" data-rotulo="Custo">R$ 60,00</td></tr>
+          <tr><td>Marmitex e talheres</td>
+        <td class="text-right tabular-nums" data-rotulo="Quantidade">150 un</td>
+        <td class="text-right tabular-nums" data-rotulo="Preço">R$ 0,80</td>
+        <td class="text-right tabular-nums" data-rotulo="Custo">R$ 120,00</td></tr>
+          <tr><td>Gás</td>
+        <td class="text-right tabular-nums" data-rotulo="Quantidade">1 un</td>
+        <td class="text-right tabular-nums" data-rotulo="Preço">R$ 120,00</td>
+        <td class="text-right tabular-nums" data-rotulo="Custo">R$ 120,00</td></tr>
+          <tr><td>Imprevisto (10%)</td><td class="max-sm:hidden"></td><td class="max-sm:hidden"></td>
+        <td class="text-right tabular-nums" data-rotulo="Custo">R$ 112,49</td></tr>
+      <tr class="bg-muted/40 font-semibold hover:bg-muted/40"><td>Meta</td><td class="max-sm:hidden"></td><td class="max-sm:hidden"></td>
+        <td class="text-right tabular-nums" data-rotulo="Total">R$ 1.237,37</td></tr>
+    </tbody>
+  </table></div>
+  <p class="text-sm"><span class="font-semibold">Regra da sobra:</span> O que o mutirão economizar e o imprevisto não usado vão para a próxima Janta Solidária.</p>
+  <p class="text-sm text-muted-foreground">Aprovado em 11/10/2026 por duas pessoas da diretoria. Execução em até 30 dias depois de a meta bater.</p>
+</section>
+</main>
+</body>
+</html>
