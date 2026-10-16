@@ -6,3 +6,13 @@
 @font-face { font-family: 'Plex Num'; font-style: normal; font-weight: 700 900; font-display: swap; src: url('../fonts/plex-condensed-700-latin.woff2') format('woff2'); unicode-range: U+0030-0039; }
 
 :root { --font-family: 'Plex Num', 'Quicksand'; }
+
+/* Tabela em cartão no celular (o padrão do painel, AppServiceProvider): o número que no computador fica à direita, para
+   alinhar na coluna, no cartão vai à esquerda como o resto. Sem isto o cartão se lê em zigue-zague. Mesmo corte do
+   Filament para empilhar (sm, 40rem). */
+@media (width < 40rem) {
+  .fi-ta-table-stacked-on-mobile > tbody > tr > .fi-ta-cell,
+  .fi-ta-table-stacked-on-mobile > tbody > tr > .fi-ta-cell :is(.fi-align-end, .fi-align-right, .fi-align-center) { text-align: start; }
+  .fi-ta-table-stacked-on-mobile > tbody > tr > .fi-ta-cell :is(.fi-align-end, .fi-align-right, .fi-align-center) ul,
+  .fi-ta-table-stacked-on-mobile > tbody > tr > .fi-ta-cell ul:is(.fi-align-end, .fi-align-right, .fi-align-center) { justify-content: flex-start; }
+}

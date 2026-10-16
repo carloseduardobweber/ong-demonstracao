@@ -6,14 +6,14 @@
 <title>Canal de denúncia</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Quicksand:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://carloseduardobweber.github.io/ong-demonstracao/css/ong.css?v=1791756105">
-<script src="https://carloseduardobweber.github.io/ong-demonstracao/js/lista.js?v=1791731645" defer></script>
-<script src="https://carloseduardobweber.github.io/ong-demonstracao/js/datapop.js?v=1791731772" defer></script>
-<script src="https://carloseduardobweber.github.io/ong-demonstracao/js/publico.js?v=1791748295" defer></script>
+<link rel="stylesheet" href="https://carloseduardobweber.github.io/ong-demonstracao/css/ong.css?v=1792160062">
+<script src="https://carloseduardobweber.github.io/ong-demonstracao/js/lista.js?v=1792104941" defer></script>
+<script src="https://carloseduardobweber.github.io/ong-demonstracao/js/datapop.js?v=1792104941" defer></script>
+<script src="https://carloseduardobweber.github.io/ong-demonstracao/js/publico.js?v=1792164857" defer></script>
 </head>
 <body>
-<main class="mx-auto grid max-w-3xl gap-6 px-4 pt-5 pb-16">
-  <nav class="flex flex-wrap items-center gap-x-4 gap-y-2 text-sm"><a class="font-medium text-primary" href="https://carloseduardobweber.github.io/ong-demonstracao">Início</a><a class="font-medium text-primary" href="https://carloseduardobweber.github.io/ong-demonstracao/proposito">Propósito</a><a class="font-medium text-primary" href="https://carloseduardobweber.github.io/ong-demonstracao/confira">Confira</a><a class="font-medium text-primary" href="https://carloseduardobweber.github.io/ong-demonstracao/denuncia">Denúncia</a><a class="btn btn-sm ml-auto no-underline" href="https://carloseduardobweber.github.io/ong-demonstracao/ajudar">Quero ajudar</a></nav>
+<main class="mx-auto grid max-w-3xl gap-6 px-4 pt-5 pb-16 print:p-0">
+  <nav class="flex flex-wrap items-center gap-x-4 gap-y-2 text-sm print:hidden"><a class="font-medium text-primary" href="https://carloseduardobweber.github.io/ong-demonstracao">Início</a><a class="font-medium text-primary" href="https://carloseduardobweber.github.io/ong-demonstracao/proposito">Propósito</a><a class="font-medium text-primary" href="https://carloseduardobweber.github.io/ong-demonstracao/confira">Confira</a><a class="font-medium text-primary" href="https://carloseduardobweber.github.io/ong-demonstracao/denuncia">Denúncia</a><a class="btn btn-sm ml-auto no-underline" href="https://carloseduardobweber.github.io/ong-demonstracao/ajudar">Quero ajudar</a></nav>
   <div class="alert alert-info" role="note"><p class="alert-title">Demonstração</p><p class="alert-description">Os dados são inventados e nada do que você preencher aqui é enviado.</p></div>        <header class="hero">
   <p class="hero-eyebrow">Canal de denúncia</p>
   <h1 class="hero-title">Viu algo errado? Conte</h1>
@@ -21,11 +21,13 @@
 </header>
 
 <section class="card">
-  <form class="card-content form-grid" method="post" action="https://carloseduardobweber.github.io/ong-demonstracao/denuncia"><input type="hidden" name="_token" value="IdlwabQQCVifUFf20AU2iTMes23vjPa5sqypJTzf" autocomplete="off">    <div class="field field-wide"><label class="label" for="den-texto">O que aconteceu</label>
+  <form class="card-content form-grid" method="post" action="https://carloseduardobweber.github.io/ong-demonstracao/denuncia"><input type="hidden" name="_token" value="R5D0qJZZ8dx3Ghd8H91BHGWAUC0XEqcS1DQwU3Fv" autocomplete="off">    <div class="field field-wide"><label class="label" for="den-texto">O que aconteceu <span class="text-destructive">*</span></label>
       <textarea class="textarea" id="den-texto" name="texto" rows="6" required minlength="20" maxlength="5000"></textarea></div>
-    <div class="field field-wide"><label class="label" for="den-contato">Contato para resposta, se quiser</label>
-      <input class="input" id="den-contato" name="contato" value="" maxlength="160" placeholder="e-mail ou WhatsApp" aria-describedby="den-contato-uso">
-      <span class="text-xs text-muted-foreground" id="den-contato-uso">Fica cifrado e só o conselho fiscal vê.</span></div>
+    
+    <div class="field field-wide"><div class="field-horizontal"><label class="label" for="den-contato">Contato</label>
+      <button type="button" class="info" popovertarget="den-contato-uso" aria-label="Para que serve o contato">i</button><span class="info-texto" id="den-contato-uso" popover>Para o conselho fiscal responder. Fica cifrado, e só o conselho vê. Sem ele, a denúncia vale do mesmo jeito.</span>
+</div>
+      <input class="input" id="den-contato" name="contato" value="" maxlength="160" placeholder="e-mail ou WhatsApp" aria-describedby="den-contato-uso"></div>
     <div class="field-wide"><button class="btn">Enviar ao conselho fiscal</button></div>
   </form>
 </section>
@@ -44,12 +46,14 @@
     <div class="table-wrap"><table class="table table-cards">
     <thead><tr><th>Recebida</th><th>Encerrada</th><th>Desfecho</th></tr></thead>
     <tbody>
-          <tr><td class="tabular-nums">11/10/2026</td><td class="tabular-nums" data-rotulo="Encerrada">11/10/2026</td>
+          <tr><td class="tabular-nums">16/10/2026</td><td class="tabular-nums" data-rotulo="Encerrada">16/10/2026</td>
         <td data-rotulo="Desfecho">O gás foi comprado com nota fiscal, pelo preço do plano, e a nota está na página da campanha. Nada irregular.</td></tr>
         </tbody>
   </table></div>
     <p class="text-xs text-muted-foreground">O texto da denúncia nunca é publicado: só o número e o desfecho.</p>
 </section>
+  
+  <footer class="flex flex-wrap items-center gap-x-4 gap-y-2 border-t border-border pt-4 text-sm print:hidden"><span class="text-muted-foreground">ONG</span><a class="font-medium text-primary" href="https://carloseduardobweber.github.io/ong-demonstracao/privacidade">Privacidade</a><a class="font-medium text-primary" href="https://carloseduardobweber.github.io/ong-demonstracao/termo-de-voluntariado">Termo de voluntariado</a></footer>
 </main>
 </body>
 </html>

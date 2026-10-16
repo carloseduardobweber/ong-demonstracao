@@ -6,14 +6,14 @@
 <title>Carta 56 · Natal das Cartinhas</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Quicksand:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://carloseduardobweber.github.io/ong-demonstracao/css/ong.css?v=1791756105">
-<script src="https://carloseduardobweber.github.io/ong-demonstracao/js/lista.js?v=1791731645" defer></script>
-<script src="https://carloseduardobweber.github.io/ong-demonstracao/js/datapop.js?v=1791731772" defer></script>
-<script src="https://carloseduardobweber.github.io/ong-demonstracao/js/publico.js?v=1791748295" defer></script>
+<link rel="stylesheet" href="https://carloseduardobweber.github.io/ong-demonstracao/css/ong.css?v=1792160062">
+<script src="https://carloseduardobweber.github.io/ong-demonstracao/js/lista.js?v=1792104941" defer></script>
+<script src="https://carloseduardobweber.github.io/ong-demonstracao/js/datapop.js?v=1792104941" defer></script>
+<script src="https://carloseduardobweber.github.io/ong-demonstracao/js/publico.js?v=1792164857" defer></script>
 </head>
 <body>
-<main class="mx-auto grid max-w-3xl gap-6 px-4 pt-5 pb-16">
-  <nav class="flex flex-wrap items-center gap-x-4 gap-y-2 text-sm"><a class="font-medium text-primary" href="https://carloseduardobweber.github.io/ong-demonstracao">Início</a><a class="font-medium text-primary" href="https://carloseduardobweber.github.io/ong-demonstracao/proposito">Propósito</a><a class="font-medium text-primary" href="https://carloseduardobweber.github.io/ong-demonstracao/confira">Confira</a><a class="font-medium text-primary" href="https://carloseduardobweber.github.io/ong-demonstracao/denuncia">Denúncia</a><a class="btn btn-sm ml-auto no-underline" href="https://carloseduardobweber.github.io/ong-demonstracao/ajudar">Quero ajudar</a></nav>
+<main class="mx-auto grid max-w-3xl gap-6 px-4 pt-5 pb-16 print:p-0">
+  <nav class="flex flex-wrap items-center gap-x-4 gap-y-2 text-sm print:hidden"><a class="font-medium text-primary" href="https://carloseduardobweber.github.io/ong-demonstracao">Início</a><a class="font-medium text-primary" href="https://carloseduardobweber.github.io/ong-demonstracao/proposito">Propósito</a><a class="font-medium text-primary" href="https://carloseduardobweber.github.io/ong-demonstracao/confira">Confira</a><a class="font-medium text-primary" href="https://carloseduardobweber.github.io/ong-demonstracao/denuncia">Denúncia</a><a class="btn btn-sm ml-auto no-underline" href="https://carloseduardobweber.github.io/ong-demonstracao/ajudar">Quero ajudar</a></nav>
   <div class="alert alert-info" role="note"><p class="alert-title">Demonstração</p><p class="alert-description">Os dados são inventados e nada do que você preencher aqui é enviado.</p></div>        <p class="text-sm"><a class="font-medium text-primary no-underline" href="https://carloseduardobweber.github.io/ong-demonstracao/c/natal-das-cartinhas#cartinhas">Natal das Cartinhas: todas as cartas</a></p>
 
 <article class="carta carta-grande">
@@ -34,23 +34,29 @@
 
 <section class="card" id="adotar">
   <div class="card-header"><h2 class="card-title">Adotar a carta 56</h2>
-    <p class="card-description">Na véspera do dia que você escolher, mandamos um lembrete. O presente conta para a meta quando chega ao depósito.</p></div>
-  <form class="card-content form-grid" method="post" action="https://carloseduardobweber.github.io/ong-demonstracao/c/natal-das-cartinhas/reservar"><input type="hidden" name="_token" value="IdlwabQQCVifUFf20AU2iTMes23vjPa5sqypJTzf" autocomplete="off">    <input type="hidden" name="plano_item_id" value="73"><input type="hidden" name="quantidade" value="1">
-    <div class="field"><label class="label" for="car-ponto">Onde vai entregar</label><select class="select" id="car-ponto" name="ponto_coleta_id">
+    <p class="card-description">O presente conta para a meta quando chega ao depósito.</p></div>
+  <form class="card-content form-grid" method="post" action="https://carloseduardobweber.github.io/ong-demonstracao/c/natal-das-cartinhas/reservar"><input type="hidden" name="_token" value="R5D0qJZZ8dx3Ghd8H91BHGWAUC0XEqcS1DQwU3Fv" autocomplete="off">    <input type="hidden" name="plano_item_id" value="73"><input type="hidden" name="quantidade" value="1">
+    <div class="field"><label class="label" for="car-ponto">Local de entrega <span class="text-destructive">*</span></label><select class="select" id="car-ponto" name="ponto_coleta_id">
       <option value="1" >Depósito da ONG · Rua das Flores, 100</option><option value="2" >Supermercado Bom Preço · Av. Central, 500</option>    </select></div>
-    <div class="field"><label class="label" for="car-dataBtn">Quando</label><button type="button" class="btn btn-outline w-full justify-start border-input font-normal" id="car-dataBtn" data-datapop="dia" data-alvo="car-data"
-    data-min="2026-10-11"   data-max="2026-12-06"   aria-haspopup="dialog" aria-expanded="false">
+    <div class="field"><label class="label" for="car-dataBtn">Data <span class="text-destructive">*</span></label><button type="button" class="btn btn-outline w-full justify-start border-input font-normal" id="car-dataBtn" data-datapop="dia" data-alvo="car-data"
+    data-min="2026-10-16"   data-max="2026-12-06"   aria-haspopup="dialog" aria-expanded="false">
   <svg class="text-muted-foreground" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
   <span data-datapop-rotulo>Escolher a data</span>
 </button>
 <input type="hidden" id="car-data" name="data_prevista" value="">
 </div>
-    <div class="field"><label class="label" for="car-nome">Nome</label><input class="input" id="car-nome" name="nome" value="" required></div>
-    <div class="field"><label class="label" for="car-contato">WhatsApp ou e-mail</label><input class="input" id="car-contato" name="contato" value="" required aria-describedby="car-contato-uso">
-      <span class="text-xs text-muted-foreground" id="car-contato-uso">Para o lembrete da véspera e, se for e-mail, a foto da entrega. Fica guardado cifrado e não aparece na página.</span></div>
+    <div class="field"><label class="label" for="car-nome">Nome <span class="text-destructive">*</span></label><input class="input" id="car-nome" name="nome" value="" required></div>
+    
+    <div class="field"><div class="field-horizontal"><label class="label" for="car-contato">WhatsApp ou e-mail</label>
+      <button type="button" class="info" popovertarget="car-contato-uso" aria-label="Para que serve o contato">i</button><span class="info-texto" id="car-contato-uso" popover>Para o lembrete da véspera e, se for e-mail, a foto da entrega. Sem ele, a adoção vale do mesmo jeito.</span>
+</div>
+      <input class="input" id="car-contato" name="contato" value="" maxlength="120" aria-describedby="car-contato-uso"></div>
+    <label class="field-horizontal field-wide text-sm"><input class="checkbox" type="checkbox" name="autorizo_contato" value="1" ><span>Autorizo a ONG a guardar este contato, cifrado, para o lembrete da véspera e a foto da entrega</span></label>
     <div class="field-wide"><button class="btn">Adotar esta carta</button></div>
   </form>
 </section>
+  
+  <footer class="flex flex-wrap items-center gap-x-4 gap-y-2 border-t border-border pt-4 text-sm print:hidden"><span class="text-muted-foreground">ONG</span><a class="font-medium text-primary" href="https://carloseduardobweber.github.io/ong-demonstracao/privacidade">Privacidade</a><a class="font-medium text-primary" href="https://carloseduardobweber.github.io/ong-demonstracao/termo-de-voluntariado">Termo de voluntariado</a></footer>
 </main>
 </body>
 </html>
