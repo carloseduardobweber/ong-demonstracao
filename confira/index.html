@@ -6,10 +6,10 @@
 <title>Confira</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Quicksand:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://carloseduardobweber.github.io/ong-demonstracao/css/ong.css?v=1792160062">
-<script src="https://carloseduardobweber.github.io/ong-demonstracao/js/lista.js?v=1792104941" defer></script>
-<script src="https://carloseduardobweber.github.io/ong-demonstracao/js/datapop.js?v=1792104941" defer></script>
-<script src="https://carloseduardobweber.github.io/ong-demonstracao/js/publico.js?v=1792164857" defer></script>
+<link rel="stylesheet" href="https://carloseduardobweber.github.io/ong-demonstracao/css/ong.css?v=1792177933">
+<script src="https://carloseduardobweber.github.io/ong-demonstracao/js/lista.js?v=1792146398" defer></script>
+<script src="https://carloseduardobweber.github.io/ong-demonstracao/js/datapop.js?v=1792146398" defer></script>
+<script src="https://carloseduardobweber.github.io/ong-demonstracao/js/publico.js?v=1792177249" defer></script>
 </head>
 <body>
 <main class="mx-auto grid max-w-3xl gap-6 px-4 pt-5 pb-16 print:p-0">
@@ -33,7 +33,7 @@
 <section class="card">
   <div class="card-header"><h2 class="card-title">Quer o seu nome na lista?</h2>
     <p class="card-description">Na lista pública, toda doação aparece como "Doador" e o final do ID. Com o ID inteiro do comprovante, você troca pelo nome que quiser, ou tira depois.</p></div>
-  <form class="card-content form-grid" method="post" action="https://carloseduardobweber.github.io/ong-demonstracao/confira/nome"><input type="hidden" name="_token" value="R5D0qJZZ8dx3Ghd8H91BHGWAUC0XEqcS1DQwU3Fv" autocomplete="off">    <div class="field"><label class="label" for="nome-id">ID inteiro do Pix <span class="text-destructive">*</span></label><input class="input font-mono" id="nome-id" name="id" value="" required maxlength="64" autocomplete="off"></div>
+  <form class="card-content form-grid" method="post" action="https://carloseduardobweber.github.io/ong-demonstracao/confira/nome"><input type="hidden" name="_token" value="JE2hjlbkKh1ZFZvBiYqnsh51f7hL2rss4ySr3omi" autocomplete="off">    <div class="field"><label class="label" for="nome-id">ID inteiro do Pix <span class="text-destructive">*</span></label><input class="input font-mono" id="nome-id" name="id" value="" required maxlength="64" autocomplete="off"></div>
     <div class="field"><label class="label" for="nome-nome">Nome na lista <span class="text-destructive">*</span></label><input class="input" id="nome-nome" name="nome" value="" required maxlength="60" placeholder="Maria S."></div>
     <label class="field-horizontal field-wide text-sm"><input class="checkbox" type="checkbox" name="autorizo" value="1"><span>Autorizo mostrar este nome na lista pública de doações</span></label>
     <div class="field-wide flex flex-wrap gap-2"><button class="btn">Mostrar meu nome</button>
@@ -44,7 +44,7 @@
 <section class="card" id="recibo">
   <div class="card-header"><h2 class="card-title">Recibo da doação</h2>
     <p class="card-description">Com o ID inteiro do comprovante, o nome e o CPF ou CNPJ de quem doou. O recibo sai quando o Pix já está no extrato do banco, em geral no dia seguinte, e é um por Pix: pedir de novo devolve o mesmo. Para empresa, sai também a declaração do modelo da Receita, quando a ONG já pode dar. O CPF ou CNPJ também soma as doações da mesma pessoa: quando chegam ao valor de doação grande, o conselho fiscal confere de onde vem o dinheiro (regra E7). A soma não depende da autorização abaixo, que é só para o recibo: é interesse legítimo da ONG (LGPD, art. 7º, IX).</p></div>
-    <form class="card-content form-grid" method="post" action="https://carloseduardobweber.github.io/ong-demonstracao/confira/recibo"><input type="hidden" name="_token" value="R5D0qJZZ8dx3Ghd8H91BHGWAUC0XEqcS1DQwU3Fv" autocomplete="off">    <div class="field field-wide"><label class="label" for="recibo-id">ID inteiro do Pix <span class="text-destructive">*</span></label><input class="input font-mono" id="recibo-id" name="pix_id" value="" required maxlength="64" autocomplete="off"></div>
+    <form class="card-content form-grid" method="post" action="https://carloseduardobweber.github.io/ong-demonstracao/confira/recibo"><input type="hidden" name="_token" value="JE2hjlbkKh1ZFZvBiYqnsh51f7hL2rss4ySr3omi" autocomplete="off">    <div class="field field-wide"><label class="label" for="recibo-id">ID inteiro do Pix <span class="text-destructive">*</span></label><input class="input font-mono" id="recibo-id" name="pix_id" value="" required maxlength="64" autocomplete="off"></div>
     <div class="field"><label class="label" for="recibo-doador">Nome completo ou razão social <span class="text-destructive">*</span></label><input class="input" id="recibo-doador" name="doador" value="" required maxlength="120"></div>
     <div class="field"><label class="label" for="recibo-documento">CPF ou CNPJ <span class="text-destructive">*</span></label><input class="input font-mono uppercase" id="recibo-documento" name="documento" value="" required maxlength="24" autocapitalize="characters" autocomplete="off"></div>
     <label class="field-horizontal field-wide text-sm"><input class="checkbox" type="checkbox" name="autorizo_recibo" value="1" required><span>Autorizo a ONG a guardar este nome e este documento, cifrados, para o recibo</span></label>
@@ -77,8 +77,8 @@
   </form>
     <div class="card-content grid gap-2">
     <h3 class="text-sm font-semibold">As chaves que recebem hoje</h3>
-          <div class="grid gap-1 rounded-md border border-border p-3 text-sm"><span class="font-medium">Janta Solidária do bairro X</span><span class="font-mono break-all" data-chave>e5729f53-20f8-416b-8573-9787ba4b64c1</span></div>
-          <div class="grid gap-1 rounded-md border border-border p-3 text-sm"><span class="font-medium">Natal das Cartinhas</span><span class="font-mono break-all" data-chave>cd7896bb-d706-4d2f-9ffe-48e6815eee10</span></div>
+          <div class="grid gap-1 rounded-md border border-border p-3 text-sm"><span class="font-medium">Janta Solidária do bairro X</span><span class="font-mono break-all" data-chave>8c475247-006d-4d05-9443-c263cdc2bbf3</span></div>
+          <div class="grid gap-1 rounded-md border border-border p-3 text-sm"><span class="font-medium">Natal das Cartinhas</span><span class="font-mono break-all" data-chave>1ab71d40-438e-4fd2-8c87-2186d756257d</span></div>
           <div class="grid gap-1 rounded-md border border-border p-3 text-sm"><span class="font-medium">Conta Principal</span><span class="font-mono break-all" data-chave>12ABC34501DE35</span></div>
           <div class="grid gap-1 rounded-md border border-border p-3 text-sm"><span class="font-medium">Conta Emergência</span><span class="font-mono break-all" data-chave>emergencia@demo.ong</span></div>
       </div>
