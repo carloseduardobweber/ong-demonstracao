@@ -43,6 +43,41 @@ document.addEventListener('click', function (e) {
   aplicar(lembrada());
 })();
 
+// Vitrine da capa: setas e pontos levam ao slide, o ponto acompanha o dedo, e ela passa sozinha a cada 7 segundos.
+// Para quando a pessoa põe o mouse, o dedo ou o foco nela, e não passa sozinha para quem pediu menos movimento.
+(function () {
+  var vitrine = document.querySelector('[data-vitrine]');
+  if (!vitrine) return;
+  var trilho = vitrine.querySelector('[data-vitrine-trilho]');
+  var slides = vitrine.querySelectorAll('[data-vitrine-slide]');
+  var pontos = vitrine.querySelectorAll('[data-vitrine-ponto]');
+  if (slides.length < 2) return;
+  function atual() { return Math.round(trilho.scrollLeft / trilho.clientWidth); }
+  function ir(i) {
+    i = (i + slides.length) % slides.length;
+    trilho.scrollTo({ left: i * trilho.clientWidth });
+    marcar(i);
+  }
+  function marcar(i) {
+    if (typeof i !== 'number') i = atual();
+    pontos.forEach(function (p, n) { p.setAttribute('aria-current', n === i ? 'true' : 'false'); });
+  }
+  var espera;
+  trilho.addEventListener('scroll', function () { clearTimeout(espera); espera = setTimeout(marcar, 60); });
+  vitrine.addEventListener('click', function (e) {
+    if (e.target.closest('[data-vitrine-anterior]')) ir(atual() - 1);
+    if (e.target.closest('[data-vitrine-proxima]')) ir(atual() + 1);
+    var ponto = e.target.closest('[data-vitrine-ponto]');
+    if (ponto) ir(Number(ponto.dataset.vitrinePonto));
+  });
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var parada = false;
+  ['mouseenter', 'focusin', 'touchstart'].forEach(function (ev) { vitrine.addEventListener(ev, function () { parada = true; }, { passive: true }); });
+  vitrine.addEventListener('mouseleave', function () { parada = false; });
+  vitrine.addEventListener('focusout', function (e) { if (!vitrine.contains(e.relatedTarget)) parada = false; });
+  setInterval(function () { if (!parada && !document.hidden) ir(atual() + 1); }, 7000);
+})();
+
 // Demonstração (GitHub Pages): não há app por trás, então o formulário avisa em vez de enviar.
 if (document.documentElement.hasAttribute('data-demonstracao')) {
   document.addEventListener('submit', function (e) {
